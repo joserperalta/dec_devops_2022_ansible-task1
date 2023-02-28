@@ -1,0 +1,9 @@
+- hosts: ubuntu
+	tasks:
+	# apt update
+	# apt install
+	- name: Install apache httpd
+		apt:
+		  name: apache2
+		  state: present
+		  update_cache: yes
